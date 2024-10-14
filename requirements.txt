@@ -1,0 +1,6 @@
+aiohttp
+aioconsole
+coloredlogs
+uvicorn
+fastapi
+python-dotenv
