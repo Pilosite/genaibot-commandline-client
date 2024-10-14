@@ -185,17 +185,6 @@ To start the Assistant CLI application, make sure the Younited Genaibot framewor
 python basic_app.py run
 ```
 
-#### Optional Arguments
-
-- `--prompt-name TEXT`: Name of a system prompt to load from the `prompts/` directory.
-- `--show-internal-messages`: Display internal assistant messages during the conversation.
-
-**Example:**
-
-```bash
-python basic_app.py run --prompt-name my_prompt --show-internal-messages
-```
-
 ### Available Commands
 
 Within the application, you can use the following commands:
@@ -236,32 +225,6 @@ The report will be available in the `htmlcov` directory. Open `htmlcov/index.htm
 When running tests, you might encounter a `NoConsoleScreenBufferError` on Windows. This is due to `prompt_toolkit` attempting to access the console in a test environment.
 
 **Solution**: The tests have been adjusted to mock `patch_stdout` during testing.
-
-## Customization
-
-### System Prompts
-
-You can provide custom system prompts for the assistant by placing `.txt` files in the `prompts/` directory.
-
-**Steps to Add a Custom Prompt:**
-
-1. Create a `prompts` directory if it doesn't exist:
-
-   ```bash
-   mkdir prompts
-   ```
-
-2. Add your prompt file:
-
-   ```bash
-   echo "Your custom prompt content here." > prompts/my_prompt.txt
-   ```
-
-3. Run the application with the `--prompt-name` argument:
-
-   ```bash
-   python basic_app.py run --prompt-name my_prompt
-   ```
 
 ## Contributing
 
