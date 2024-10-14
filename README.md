@@ -117,13 +117,6 @@ Before running the application, you need to set up your environment variables an
 
    Open the `.env` file and fill in the necessary values:
 
-   - **AZURE_OPENAI_KEY**: Your Azure OpenAI API key.
-   - **AZURE_OPENAI_ENDPOINT**: Your Azure OpenAI service endpoint.
-     - Example: `https://your-resource-name.openai.azure.com/`
-   - **AZURE_OPENAI_API_VERSION**: The API version to use.
-     - Example: `2023-05-15`
-   - **AZURE_OPENAI_MODEL_NAME**: The name of your deployed Azure OpenAI model.
-     - Example: `gpt-35-turbo` or `gpt-4`
    - **CLIENT_ID**: An identifier for your client application.
    - **LLM_NOTIFICATION_ENDPOINT**: The endpoint URL where the assistant sends and receives messages.
      - Example: `http://localhost:8000/api/receive_message`
